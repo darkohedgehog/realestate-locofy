@@ -31,12 +31,12 @@ const HeroSection = () => {
   const router = useRouter();
 
   const onSearchCTAClick = () => {
-    router.push("/../pages/properties-grid-view");
+    router.push("/properties-grid-view");
   };
 
   return (
-    <section className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-33xl text-gray-white font-body-regular-400">
-      <div className="self-stretch h-[586px] flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
+    <section className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-gray-white font-body-regular-400">
+      <div className="self-stretch h-[686px] flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
         <div className="self-stretch flex flex-col items-center justify-start gap-[24px] md:max-w-full">
           <h1 className="m-0 self-stretch relative text-inherit leading-[72px] font-semibold font-inherit text-[inherit]">
             Find Your Dream Home
@@ -48,7 +48,7 @@ const HeroSection = () => {
           </div>
         </div>
         <form className="self-stretch flex flex-col items-center justify-start gap-[17px]">
-          <div className="flex flex-row items-start justify-start gap-[10px]">
+          <div className="flex flex-row items-start justify-start gap-[10px] mb-10">
             <button
               className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start"
               autoFocus
@@ -63,13 +63,14 @@ const HeroSection = () => {
               </div>
             </button>
           </div>
-          <div className="self-stretch h-[129px] flex flex-row flex-wrap items-start justify-center">
-            <nav className="m-0 flex-1 rounded-lg bg-gray-white flex flex-row py-8 px-[62px] box-border items-center justify-between max-w-[1400px] md:w-[300px] md:flex-col md:gap-[20px] md:items-start md:justify-start md:ml-[auto] md:mr-[auto]">
+          <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-5">
+            <nav className="m-0 flex-1 rounded-lg bg-gray-white flex flex-row py-1 px-[62px] box-border items-center justify-between max-w-[1400px] md:w-[300px] md:flex-col md:gap-[20px] md:items-start md:justify-start md:ml-[auto] md:mr-[auto]">
               <div className="w-[137px] flex flex-col items-start justify-start gap-[16px]">
                 <div className="relative text-base leading-[24px] capitalize font-semibold font-body-large-400 text-primary-700 text-center">
                   Locations
                 </div>
                 <Dropdown
+                className="self-stretch text-[18px]"
                   overlay={
                     <Menu>
                       {[
@@ -100,7 +101,7 @@ const HeroSection = () => {
                   Property Type
                 </div>
                 <Dropdown
-                  className="self-stretch"
+                  className="self-stretch text-[18px]"
                   overlay={
                     <Menu>
                       {[
@@ -127,12 +128,12 @@ const HeroSection = () => {
                   </a>
                 </Dropdown>
               </div>
-              <div className="w-[155px] flex flex-col items-start justify-start gap-[16px]">
+              <div className="w-[155px] flex flex-col items-center justify-center gap-[16px]">
                 <div className="relative text-base leading-[24px] capitalize font-semibold font-body-large-400 text-primary-700 text-left flex items-end w-[150px]">
                   Rent Range
                 </div>
                 <Dropdown
-                  className="self-stretch"
+                  className="self-stretch text-[18px]"
                   overlay={
                     <Menu>
                       {[
