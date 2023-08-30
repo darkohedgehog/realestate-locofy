@@ -40,7 +40,7 @@ const LandingPage = () => {
                   <Link
                     className="[text-decoration:none] relative leading-[32px] font-semibold text-[inherit]"
                     target="_blank"
-                    href="/../pages/properties-grid-view"
+                    href="/properties"
                   >
                     Centerville
                   </Link>
@@ -109,7 +109,7 @@ const LandingPage = () => {
           </div>
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch flex flex-row flex-wrap items-center justify-center gap-[86px]"
-            href="/properties-grid-view"
+            href="/properties"
           >
             <SellYourHomeContainer
               homeSaleRentId="/icon.svg"
