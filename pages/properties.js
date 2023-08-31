@@ -53,7 +53,7 @@ const PropertiesGridView = () => {
             </div>
             <div className="relative leading-[24px]">Sort by:</div>
             <Dropdown
-              overlay={
+              menu={
                 <Menu>
                   {[
                     { value: "Popular properties" },

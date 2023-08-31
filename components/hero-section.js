@@ -31,7 +31,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   const onSearchCTAClick = () => {
-    router.push("/properties-grid-view");
+    router.push("/properties");
   };
 
   return (
@@ -71,7 +71,7 @@ const HeroSection = () => {
                 </div>
                 <Dropdown
                 className="self-stretch text-[18px]"
-                  overlay={
+                  menu={
                     <Menu>
                       {[
                         { value: "New York" },
@@ -102,7 +102,7 @@ const HeroSection = () => {
                 </div>
                 <Dropdown
                   className="self-stretch text-[18px]"
-                  overlay={
+                  menu={
                     <Menu>
                       {[
                         { value: "Studio apartments" },
@@ -134,7 +134,7 @@ const HeroSection = () => {
                 </div>
                 <Dropdown
                   className="self-stretch text-[18px]"
-                  overlay={
+                  menu={
                     <Menu>
                       {[
                         { value: "$500-$2000" },
