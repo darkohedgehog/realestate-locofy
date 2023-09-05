@@ -1,15 +1,15 @@
 import { useMemo } from "react";
 
 const FooterSection = ({
-  imageDimensions,
-  imageDimensionsText,
-  imageDimensionsText2,
-  imageDimensionsText3,
-  imageDimensionsText4,
-  imageDimensionsText5,
-  propHeight,
-  propBoxSizing,
-  propOverflow,
+  imageDimensions="/houseline.svg",
+  imageDimensionsText="/social-media-logo.svg",
+  imageDimensionsText2="/social-media-logo1.svg",
+  imageDimensionsText3="/social-media-logo2.svg",
+  imageDimensionsText4="/social-media-logo3.svg",
+  imageDimensionsText5="/social-media-logo4.svg",
+  propHeight="429px",
+  propBoxSizing="border-box",
+  propOverflow="unset",
 }) => {
   const footerSectionStyle = useMemo(() => {
     return {

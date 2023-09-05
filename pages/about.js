@@ -43,14 +43,7 @@ const about = () => {
             </aside>
 
       </div>
-      <FooterSection
-      imageDimensions="/houseline1.svg"
-      imageDimensionsText="/social-media-logo5.svg"
-      imageDimensionsText2="/social-media-logo6.svg"
-      imageDimensionsText3="/social-media-logo7.svg"
-      imageDimensionsText4="/social-media-logo8.svg"
-      imageDimensionsText5="/social-media-logo9.svg"
-      />
+      <FooterSection />
     </>
   )
 }

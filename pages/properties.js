@@ -1,30 +1,6 @@
 import "antd/dist/antd.min.css";
-import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { Menu, Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import PropertyGridContainer from "../components/property-grid-container";
 import FooterSection from "../components/footer-section";
@@ -113,14 +89,7 @@ const PropertiesGridView = () => {
           </div>
         </div>
       </div>
-      <FooterSection
-        imageDimensions="/houseline1.svg"
-        imageDimensionsText="/social-media-logo5.svg"
-        imageDimensionsText2="/social-media-logo6.svg"
-        imageDimensionsText3="/social-media-logo7.svg"
-        imageDimensionsText4="/social-media-logo8.svg"
-        imageDimensionsText5="/social-media-logo9.svg"
-      />
+      <FooterSection />
     </div>
   );
 };

@@ -255,21 +255,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <FooterSection
-        imageDimensions="/houseline.svg"
-        imageDimensionsText="/social-media-logo.svg"
-        imageDimensionsText2="/social-media-logo1.svg"
-        imageDimensionsText3="/social-media-logo2.svg"
-        imageDimensionsText4="/social-media-logo3.svg"
-        imageDimensionsText5="/social-media-logo4.svg"
-        propHeight="429px"
-        propBoxSizing="border-box"
-        propOverflow="unset"
-      />
+      <FooterSection />
     </main>
     </>
       
-
   );
 };
 
