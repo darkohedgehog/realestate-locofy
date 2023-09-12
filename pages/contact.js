@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@mui/material";
 import FooterSection from "../components/footer-section";
 
-const contact = () => {
+const Contact = () => {
   return (
     <>
     <Header />
@@ -84,4 +84,4 @@ const contact = () => {
   )
 }
 
-export default contact;
+export default Contact;

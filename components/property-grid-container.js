@@ -10,7 +10,7 @@ const PropertyGridContainer = () => {
           />
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start">
             <div className="flex-1 relative leading-[20.32px] font-medium">
-              92 ALLIUM PLACE, ORLANDO FL 32827
+              92 ALLIUM PLACE, New York FL 32827
             </div>
           </div>
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start text-[13.55px] text-primary-500">
@@ -90,7 +90,7 @@ const PropertyGridContainer = () => {
           />
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start">
             <div className="flex-1 relative leading-[20.32px] font-medium">
-              92 ALLIUM PLACE, ORLANDO FL 32827
+              92 ALLIUM PLACE, Los Angeles FL 32827
             </div>
           </div>
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start text-[13.55px] text-primary-500">
@@ -170,7 +170,7 @@ const PropertyGridContainer = () => {
           />
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start">
             <div className="flex-1 relative leading-[20.32px] font-medium">
-              92 ALLIUM PLACE, ORLANDO FL 32827
+              92 ALLIUM PLACE, Berlin FL 32827
             </div>
           </div>
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start text-[13.55px] text-primary-500">
@@ -250,7 +250,7 @@ const PropertyGridContainer = () => {
           />
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start">
             <div className="flex-1 relative leading-[20.32px] font-medium">
-              92 ALLIUM PLACE, ORLANDO FL 32827
+              92 ALLIUM PLACE, Chicago FL 32827
             </div>
           </div>
           <div className="self-stretch flex flex-row p-2.5 items-start justify-start text-[13.55px] text-primary-500">

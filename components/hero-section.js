@@ -1,37 +1,45 @@
+import React from "react";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
+
+
+const locationOptions = ["New York", "Los Angeles", "Chicago", "Berlin"];
+const propertyTypeOptions = [
+  "Studio apartments",
+  "One-bedroom apartments",
+  "Two-bedroom apartments",
+  "Three-bedroom apartments",
+  "Four or more bedroom apartments/houses",
+];
+const rentRangeOptions = ["$500-$2000", "$2500-$10000", "$10000+"];
 
 const HeroSection = () => {
   const router = useRouter();
 
   const onSearchCTAClick = () => {
     router.push("/properties");
+  };
+
+  const handleLocationClick = (location) => {
+    const locationSlug = location.toLowerCase().replace(/\s/g, "-");
+    const locationPath = `/properties/${locationSlug}`;
+    router.push(locationPath);
+  };
+
+  const handlePropertyTypeClick = (propertyType) => {
+    // Kreirajte putanju za preusmeravanje na osnovu odabrane vrste nekretnine
+    const propertyTypeSlug = propertyType.toLowerCase().replace(/\s/g, "-");
+    const propertyTypePath = `/property-types/${propertyTypeSlug}`;
+    router.push(propertyTypePath);
+  };
+
+  const handleRentRangeClick = (rentRange) => {
+    // Kreirajte putanju za preusmeravanje na osnovu odabrane raspona rente
+    const rentRangeSlug = rentRange.toLowerCase().replace(/\s/g, "-");
+    const rentRangePath = `/rent-ranges/${rentRangeSlug}`;
+    router.push(rentRangePath);
   };
 
   return (
@@ -70,19 +78,12 @@ const HeroSection = () => {
                   Locations
                 </div>
                 <Dropdown
-                className="self-stretch text-[18px]"
-                  menu={
+                  className="self-stretch text-[18px]"
+                  overlay={
                     <Menu>
-                      {[
-                        { value: "New York" },
-                        { value: "Los Angeles" },
-                        { value: "Chicago" },
-                        { value: "Berlin" },
-                      ].map((option, index) => (
+                      {locationOptions.map((option, index) => (
                         <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
+                          <a onClick={() => handleLocationClick(option)}>{option}</a>
                         </Menu.Item>
                       ))}
                     </Menu>
@@ -90,10 +91,12 @@ const HeroSection = () => {
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
-                  <a onClick={(e) => e.preventDefault()}>
-                    {`Select your city `}
-                    <DownOutlined />
-                  </a>
+                  <div>
+                    <a>
+                      {`Select your city `}
+                      <DownOutlined />
+                    </a>
+                  </div>
                 </Dropdown>
               </div>
               <div className="w-[177px] flex flex-col items-start justify-start gap-[16px]">
@@ -102,19 +105,11 @@ const HeroSection = () => {
                 </div>
                 <Dropdown
                   className="self-stretch text-[18px]"
-                  menu={
+                  overlay={
                     <Menu>
-                      {[
-                        { value: "Studio apartments" },
-                        { value: "One-bedroom apartments" },
-                        { value: "Two-bedroom apartments" },
-                        { value: "Three-bedroom apartments" },
-                        { value: "Four or more bedroom apartments/houses" },
-                      ].map((option, index) => (
+                      {propertyTypeOptions.map((option, index) => (
                         <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
+                          <a onClick={() => handlePropertyTypeClick(option)}>{option}</a>
                         </Menu.Item>
                       ))}
                     </Menu>
@@ -122,10 +117,12 @@ const HeroSection = () => {
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
-                  <a onClick={(e) => e.preventDefault()}>
-                    {`Select property type `}
-                    <DownOutlined />
-                  </a>
+                  <div>
+                    <a>
+                      {`Select property type `}
+                      <DownOutlined />
+                    </a>
+                  </div>
                 </Dropdown>
               </div>
               <div className="w-[155px] flex flex-col items-center justify-center gap-[16px]">
@@ -134,17 +131,11 @@ const HeroSection = () => {
                 </div>
                 <Dropdown
                   className="self-stretch text-[18px]"
-                  menu={
+                  overlay={
                     <Menu>
-                      {[
-                        { value: "$500-$2000" },
-                        { value: "$2500-$10000" },
-                        { value: "$10000+" },
-                      ].map((option, index) => (
+                      {rentRangeOptions.map((option, index) => (
                         <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
+                          <a onClick={() => handleRentRangeClick(option)}>{option}</a>
                         </Menu.Item>
                       ))}
                     </Menu>
@@ -152,10 +143,12 @@ const HeroSection = () => {
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
-                  <a onClick={(e) => e.preventDefault()}>
-                    {`Select rent range `}
-                    <DownOutlined />
-                  </a>
+                  <div>
+                    <a>
+                      {`Select rent range `}
+                      <DownOutlined />
+                    </a>
+                  </div>
                 </Dropdown>
               </div>
               <Button
