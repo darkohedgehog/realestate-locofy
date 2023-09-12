@@ -45,9 +45,7 @@ const Header = () => {
             <Link href="/contact">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/contact' ? 'active' : ''}`}>CONTACT US</div>
             </Link>
-            <Link href="/search">
-              <div className="relative leading-[22px] cursor-pointer">SEARCH</div>
-            </Link>
+            
           </div>
           <button className="cursor-pointer [border:none] p-0 bg-[transparent] hidden flex-row items-center justify-center lg:flex" onClick={toggleMenu}>
             <img

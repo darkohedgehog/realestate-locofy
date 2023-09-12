@@ -3,12 +3,13 @@ import Link from "next/link";
 import { Button } from "@mui/material";
 import FooterSection from "../components/footer-section";
 
+
 const Contact = () => {
   return (
     <>
     <Header />
 
-    <div className="self-stretch h-80 flex flex-col items-center justify-center bg-[url('/card-5@3x.png')] bg-cover bg-no-repeat bg-[top]">
+    <div className="self-stretch h-80 flex flex-col items-center justify-center bg-[url('/category@3x.png')] bg-cover bg-no-repeat">
         <div className="flex flex-col items-center justify-start gap-[12px]">
           <div className="relative leading-[72px] font-semibold text-white text-[28px]">
             Contact Us
