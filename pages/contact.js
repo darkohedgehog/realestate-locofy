@@ -32,8 +32,8 @@ export const Contact = () => {
 
     emailjs
       .send(
-        process.env.NEXT_EMAILJS_SERVICE_ID,
-        process.env.NEXT_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Real Estate",
@@ -41,7 +41,7 @@ export const Contact = () => {
           to_email: "zivic.darko79@gmail.com",
           message: form.message,
         },
-        process.env.NEXT_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
