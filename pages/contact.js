@@ -90,8 +90,8 @@ export const Contact = () => {
       <div className="self-stretch bg-primary-50 flex flex-row flex-wrap py-[86px] px-[5px] items-start justify-center">
         <div className="flex-1 flex flex-col py-0 px-2.5 box-border items-center justify-start gap-[40px] max-w-[900px]">
           <div className="w-[688px] flex flex-col items-center justify-start gap-[24px] max-w-[95%px] lg:max-w-[95%] md:self-stretch md:w-auto">
-            <div className="self-stretch relative leading-[48px] font-semibold">
-              Contact us
+            <div className="self-stretch relative leading-[48px] font-semibold text-[28px]">
+              Contact Us
             </div>
             <div className="self-stretch relative text-xl leading-[28px] text-lightslategray">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
