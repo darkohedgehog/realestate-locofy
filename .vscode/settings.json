@@ -1,0 +1,21 @@
+{
+  "detectedConfig": {
+    "typescript": false,
+    "naming": "Kebab Case",
+    "unit": "px",
+    "framework": "nextjs",
+    "styling": "Tailwind"
+  },
+  "locofyConfig": {
+    "project": "Real State Design",
+    "id": "64ecab54778129f1474ab3bb",
+    "framework": "react-nextjs",
+    "typescript": false,
+    "styling": "Tailwind",
+    "unit": "px",
+    "naming": "Kebab Case",
+    "path": "public/",
+    "componentsPath": "d:\\PROGRAMIRANJE\\realestate-locofy\\components",
+    "screensPath": "d:\\PROGRAMIRANJE\\realestate-locofy\\pages"
+  }
+}
