@@ -1,4 +1,3 @@
-import "antd/dist/reset.css";
 import Link from "next/link";
 import Header from "../components/header";
 import FooterSection from "../components/footer-section";

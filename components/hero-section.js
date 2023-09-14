@@ -1,5 +1,4 @@
 import React from "react";
-import "antd/dist/reset.css";
 import Link from "next/link";
 
 
@@ -21,22 +20,24 @@ const HeroSection = () => {
         </div>
         <form className="self-stretch flex flex-col items-center justify-start gap-[17px]">
           <div className="flex flex-row items-start justify-start gap-[10px] mb-10">
+          <Link className="no-underline" href="/properties">
             <button
               className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start"
               autoFocus
-            > <Link className="no-underline" href="/properties">
+            > 
               <div className="relative text-base leading-[24px] font-medium font-body-large-400 text-gray-white text-center">
                 Rent
               </div>
-              </Link>
             </button>
+            </Link>
+            <Link className="no-underline" href="/agents">
             <button className="cursor-pointer [border:none] py-3 px-6 bg-gray-white rounded overflow-hidden flex flex-row items-start justify-start">
-              <Link className="no-underline" href="/agents">
+              
               <div className="relative text-base leading-[24px] font-medium font-body-large-400 text-primary-400 text-center">
                 Sale
               </div>
-              </Link>
             </button>
+            </Link>
           </div>
           
         </form>

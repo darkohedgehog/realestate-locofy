@@ -1,4 +1,3 @@
-import "antd/dist/reset.css";
 import Header from "../components/header";
 import PropertyGridContainer from "../components/property-grid-container";
 import Link from "next/link";

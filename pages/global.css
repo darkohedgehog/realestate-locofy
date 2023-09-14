@@ -15,4 +15,3 @@ body {
 ::after {
   border-width: 0;
 }
-@import "antd/dist/reset.css";
