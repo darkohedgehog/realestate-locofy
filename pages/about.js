@@ -1,4 +1,4 @@
-import "antd/dist/antd.min.css";
+import "antd/dist/reset.css";
 import Link from "next/link";
 import Header from "../components/header";
 import FooterSection from "../components/footer-section";
@@ -7,16 +7,16 @@ const about = () => {
   return (
     <>
         <Header />
-        <div className="self-stretch h-80 flex flex-col items-center justify-center bg-[url('/unsplashrlwe8f8anoc3@2x.png')] bg-cover bg-no-repeat bg-[top] rounded-2xl">
+        <div className="self-stretch h-80 flex flex-col items-center justify-center bg-[url('/todd-kent-178j8tJrNlc-unsplash.jpg')] bg-cover bg-no-repeat bg-[center] rounded-2xl">
         <div className="flex flex-col items-center justify-start gap-[12px]">
           <div className="relative leading-[72px] font-semibold text-white text-[28px]">
             About Us
           </div>
           <div className="relative text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
-            <Link href="/">
+            <Link href="/" className="text-white no-underline">
             <span>{`Home | `}</span>
             </Link>
-            <Link href="/properties">
+            <Link href="/properties" className="text-white no-underline">
             <span className="font-medium text-gray-white">Properties</span>
             </Link>
           </div>

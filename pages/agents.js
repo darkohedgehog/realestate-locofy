@@ -1,4 +1,4 @@
-import "antd/dist/antd.min.css";
+import "antd/dist/reset.css";
 import Link from "next/link";
 import Header from "../components/header";
 import FooterSection from "../components/footer-section";
@@ -14,10 +14,10 @@ const agents = () => {
             Our Agents
           </div>
           <div className="relative text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
-            <Link href="/">
+            <Link href="/" className="text-white no-underline">
             <span>{`Home | `}</span>
             </Link>
-            <Link href="/properties">
+            <Link href="/properties" className="text-white no-underline">
             <span className="font-medium text-gray-white">Properties</span>
             </Link>
           </div>

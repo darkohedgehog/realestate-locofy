@@ -30,19 +30,19 @@ const Header = () => {
         </div>
         <div className="flex flex-row items-center justify-end gap-[36px] text-sm text-primary-900 sm:flex">
           <div className="flex flex-row items-start justify-start gap-[30px] lg:hidden">
-            <Link href="/">
+            <Link className='no-underline' href="/">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/' ? 'active' : ''}`}>HOME</div>
             </Link>
-            <Link href="/about">
+            <Link className='no-underline' href="/about">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/about' ? 'active' : ''}`}>ABOUT US</div>
             </Link>
-            <Link href="/agents">
+            <Link className='no-underline' href="/agents">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/agents' ? 'active' : ''}`}>OUR AGENTS</div>
             </Link>
-            <Link href="/properties">
+            <Link className='no-underline' href="/properties">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/properties' ? 'active' : ''}`}>PROPERTIES</div>
             </Link>           
-            <Link href="/contact">
+            <Link className='no-underline' href="/contact">
               <div className={`relative leading-[22px] cursor-pointer ${router.pathname === '/contact' ? 'active' : ''}`}>CONTACT US</div>
             </Link>
             
@@ -58,35 +58,35 @@ const Header = () => {
          <div className="absolute top-[100%] right-0 mt-2 bg-white border border-gray-300 shadow-lg rounded-lg z-[10]" onClick={closeMenu}>
          <ul className="py-2 px-4 list-none" onClick={(e) => e.stopPropagation()}>
          <li className="mb-2">
-          <Link href="/">
+          <Link className='no-underline' href="/">
           <div className="block text-primary-900 cursor-pointer hover:underline" onClick={closeMenu}>
             Home
           </div>
         </Link>
         </li>
          <li className="mb-2">
-        <Link href="/about">
+        <Link className='no-underline' href="/about">
           <div className="block text-primary-900 cursor-pointer hover:underline" onClick={closeMenu}>
             About Us
           </div>
         </Link>
         </li>
         <li className="mb-2">
-        <Link href="/agents">
+        <Link className='no-underline' href="/agents">
           <div className="block text-primary-900 cursor-pointer hover:underline" onClick={closeMenu}>
             Our Agents
           </div>
         </Link>
         </li>
         <li className="mb-2">
-        <Link href="/properties">
+        <Link className='no-underline' href="/properties">
           <div className="block text-primary-900 cursor-pointer hover:underline" onClick={closeMenu}>
            Properties
           </div>
         </Link>
         </li>
         <li className="mb-2">
-        <Link href="/contact">
+        <Link className='no-underline' href="/contact">
           <div className="block text-primary-900 cursor-pointer hover:underline" onClick={closeMenu}>
             Contact Us
           </div>

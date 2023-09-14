@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import Link from "next/link";
 
 const SellYourHomeContainer = ({
   homeSaleRentId="/icon.svg",
@@ -50,9 +51,9 @@ const SellYourHomeContainer = ({
           <div className="relative leading-[24px] text-lightslategray flex items-end w-[268px]">
             We do a free evaluation to be sure you want to start selling.
           </div>
-          <div className="relative leading-[24px] text-primary-500">
+          <Link href="/agents" className="relative leading-[24px] text-primary-500 no-underline">
             Read more
-          </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -73,9 +74,9 @@ const SellYourHomeContainer = ({
         <div className="relative leading-[24px] text-lightslategray flex items-end w-[268px]">
           We do a free evaluation to be sure you want to start selling.
         </div>
-        <div className="relative leading-[24px] text-primary-500">
+        <Link href="/agents" className="relative leading-[24px] text-primary-500 no-underline">
           Read more
-        </div>
+        </Link>
       </div>
     </div>
   </div>
@@ -96,9 +97,9 @@ const SellYourHomeContainer = ({
           <div className="relative leading-[24px] text-lightslategray flex items-end w-[268px]">
             We do a free evaluation to be sure you want to start selling.
           </div>
-          <div className="relative leading-[24px] text-primary-500">
+          <Link href="/properties" className="relative leading-[24px] text-primary-500 no-underline">
             Read more
-          </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -119,9 +120,9 @@ const SellYourHomeContainer = ({
           <div className="relative leading-[24px] text-lightslategray flex items-end w-[268px]">
             We do a free evaluation to be sure you want to start selling.
           </div>
-          <div className="relative leading-[24px] text-primary-500">
+          <Link href="/contact" className="relative leading-[24px] text-primary-500 no-underline">
             Read more
-          </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import Link from "next/link";
 
 const FooterSection = ({
   imageDimensions="/houseline.svg",
@@ -27,7 +28,9 @@ const FooterSection = ({
       <footer className="flex-1 flex flex-row items-start justify-between text-left text-5xl text-gray-black font-body-regular-400 md:flex-col md:gap-[50px] sm:flex-col sm:gap-[50px] sm:flex-[unset] sm:self-stretch">
         <div className="w-[312px] h-[300px] flex flex-col items-start justify-start gap-[20px] text-center text-primary-500 font-body-large-400">
           <div className="flex flex-row items-center justify-center gap-[8px]">
+            <Link href="/">
             <img className="relative w-11 h-11" alt="" src={imageDimensions} />
+            </Link>
             <div className="flex flex-col items-start justify-start">
               <div className="relative leading-[24px] font-semibold">REIS</div>
               <div className="relative text-sm leading-[16px] font-medium">
@@ -89,21 +92,18 @@ const FooterSection = ({
         <div className="w-[173px] h-[248px] flex flex-col items-start justify-start gap-[32px]">
           <div className="relative leading-[32px] font-semibold">Features</div>
           <div className="self-stretch h-[184px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <div className="relative leading-[24px]">Home</div>
-            <div className="relative leading-[24px]">Become a Host</div>
-            <div className="relative leading-[24px]">Pricing</div>
-            <div className="relative leading-[24px]">Blog</div>
-            <div className="relative leading-[24px]">Contact</div>
+            <Link href="/" className="relative no-underline leading-[24px]">Home</Link>           
+            <Link href="/contact" className="relative no-underline leading-[24px]">Contact</Link>
           </div>
         </div>
         <div className="w-[173px] h-[248px] flex flex-col items-start justify-start gap-[32px]">
           <div className="relative leading-[32px] font-semibold">Company</div>
           <div className="self-stretch h-[184px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <div className="relative leading-[24px]">About Us</div>
-            <div className="relative leading-[24px]">Press</div>
-            <div className="relative leading-[24px]">Contact</div>
-            <div className="relative leading-[24px]">Careers</div>
-            <div className="relative leading-[24px]">Blog</div>
+            <Link href="/about" className="relative no-underline leading-[24px]">About Us
+            </Link>
+            <Link href="/agents" className="relative no-underline leading-[24px]">Our Agents
+            </Link>
+            <Link href="/properties" className="relative no-underline leading-[24px]">Properties</Link>            
           </div>
         </div>
         <div className="w-[203px] h-[168px] flex flex-col items-start justify-start gap-[32px]">
@@ -111,7 +111,7 @@ const FooterSection = ({
             Team and policies
           </div>
           <div className="self-stretch h-[104px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <div className="relative leading-[24px]">Terms of servies</div>
+            <div className="relative leading-[24px]">Terms of services</div>
             <div className="relative leading-[24px]">Privacy Policy</div>
             <div className="relative leading-[24px]">Security</div>
           </div>

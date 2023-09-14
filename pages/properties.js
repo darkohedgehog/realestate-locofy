@@ -1,8 +1,7 @@
-import "antd/dist/antd.min.css";
-import { Menu, Dropdown } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import "antd/dist/reset.css";
 import Header from "../components/header";
 import PropertyGridContainer from "../components/property-grid-container";
+import Link from "next/link";
 import FooterSection from "../components/footer-section";
 
 const PropertiesGridView = () => {
@@ -15,44 +14,16 @@ const PropertiesGridView = () => {
             Properties
           </div>
           <div className="relative text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
-            <span>{`Home / `}</span>
+          <Link href="/" className="text-white no-underline"> 
+          <span>{`Home / `}</span>
+          </Link>
+              
             <span className="font-medium text-gray-white">Properties</span>
           </div>
         </div>
       </div>
       <div className="self-stretch flex flex-col pt-16 px-0 pb-2 items-center justify-start gap-[95px] text-left text-base text-gray-black font-body-large-400 lg:pl-[120px] lg:pr-[120px] lg:box-border md:pl-[60px] md:pr-[60px] md:box-border sm:pl-5 sm:pr-5 sm:box-border">
-        <div className="w-[272px] flex flex-row items-center justify-start">
-          <div className="flex flex-row items-end justify-start gap-[16px]">
-            <div className="flex flex-row items-start justify-start gap-[8px]">
-              <img className="relative w-6 h-6" alt="" src="/listbullets.svg" />
-              <img className="relative w-6 h-6" alt="" src="/squaresfour.svg" />
-            </div>
-            <div className="relative leading-[24px]">Sort by:</div>
-            <Dropdown
-              overlay={
-                <Menu>
-                  {[
-                    { value: "Popular properties" },
-                    { value: "Latest properties" },
-                    { value: "Recommended properties" },
-                  ].map((option, index) => (
-                    <Menu.Item key={index}>
-                      <a onClick={(e) => e.preventDefault()}>
-                        {option.value || ""}
-                      </a>
-                    </Menu.Item>
-                  ))}
-                </Menu>
-              }
-              placement="bottomLeft"
-              trigger={["hover"]}
-            >
-              <a onClick={(e) => e.preventDefault()}>
-                {`Default Order `}
-                <DownOutlined />
-              </a>
-            </Dropdown>
-          </div>
+        <div className="w-[272px] flex flex-row items-center text-3xl">Check Out Our New Offers
         </div>
         <PropertyGridContainer />
         <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
